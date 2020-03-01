@@ -34,7 +34,6 @@ namespace Dogs
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             String dogBreed = txtDogBreed.Text;
-            String dogBreedL = dogBreed.ToLower();
             string searching = ("Searching for " + dogBreed + " picture please wait ~30s");
             lstTest.Items.Add(searching);           // lets user know process has started
             String url = "https://dog.ceo/api/breed//images/random";
